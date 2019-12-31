@@ -11,7 +11,7 @@ function searchDevices()
 		acceptAllDevices: true,
 		optionalServices: ['battery_service']
 	})
-	.then(device => { console.log(device) })
+	.then(device => { console.log(device.name) })
 	.catch(error => { console.log(error); });
 	
 let searchDevices = document.getElementById('searchDevices');
