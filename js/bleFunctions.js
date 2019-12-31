@@ -8,11 +8,11 @@ function searchDevices()
 	console.log("juu");
 	
 	navigator.bluetooth.requestDevice({
-  acceptAllDevices: true,
-  optionalServices: ['battery_service']
-})
-.then(device => { /* ... */ })
-.catch(error => { console.log(error); });
+		acceptAllDevices: true,
+		optionalServices: ['battery_service']
+	})
+	.then(device => { console.log(device) })
+	.catch(error => { console.log(error); });
 	
 let searchDevices = document.getElementById('searchDevices');
 }
